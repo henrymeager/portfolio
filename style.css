@@ -1,38 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html, body {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
 }
 
 nav {
-    background-color: #000000;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
     font-size: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.75rem 3rem;
+    padding: 2rem 3rem;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
 }
 
 .logo {
-    color: white;
+    color: black;
     cursor: pointer;
 }
 
 .logo h3 {
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 1.3rem;
 }
 
 ul {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
     list-style: none;
 }
 
 ul a {
-    color: white;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease 0s;
 }
 
 ul a:hover {
-    color: #02c8ec;
+    color: #2a5afd;
+}
+
+.icons-menu {
+    position: absolute;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 850px) {
+    nav {
+        padding: 2rem 2rem;
+    }
+}
+
+@media (max-width: 740px) {
+    .icons-menu {
+        display: block;
+    }
+}
+
+.home {
+    background-color: #fafafa;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-main {
+    padding: 10rem;
 }
