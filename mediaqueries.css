@@ -1,0 +1,15 @@
+@media (max-width: 850px) {
+    #desktop-nav {
+        padding: 2rem 2rem;
+    }
+}
+
+@media (max-width: 740px) {
+    #desktop-nav {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: flex;
+    }
+}
